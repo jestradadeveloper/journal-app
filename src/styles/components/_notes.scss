@@ -1,0 +1,41 @@
+.notes__main-content{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.notes__app-bar{
+    align-items: center;
+    background-color: $white-culture;
+    color: darken($color: $primary, $amount: 35);
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+
+}
+.notes__content{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding:20px;
+}
+.notes__title-input, .notes__text-area{
+    border:none;
+    &:focus{
+        outline: none;
+    }
+}
+.notes__title-input{
+    color: $dark-grey;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.notes__text-area{
+    font-size: 20px;
+    flex: 1 1 auto;
+    resize: none;   
+}
+.notes__image img{
+box-shadow: 5px 5px $dark-grey;
+height: 150px;
+}
